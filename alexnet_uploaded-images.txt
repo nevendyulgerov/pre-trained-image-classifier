@@ -1,0 +1,67 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:             Object_Tree_01.jpg  label:                object tree
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:         Animal_Squirrel_01.jpg  label:            animal squirrel
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+            Object_Tree_01.jpg: 
+Real:                object tree   Classifier:        pop bottle, soda bottle
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+
+        Animal_Squirrel_01.jpg: 
+Real:            animal squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+            Object_Tree_01.jpg: 
+Real:                object tree   Classifier:        pop bottle, soda bottle  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute  
+PetLabelDog: 1  ClassLabelDog: 1
+
+        Animal_Squirrel_01.jpg: 
+Real:            animal squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Model: alexnet
+Number of Images: 4
+Number of Dog Images: 2
+Number of "Non-a" Dog Images: 2
+Incorrectly classified breed: Dog_02.jpg, Labels: ['dog', 'malamute, malemute, alaskan malamute', 0, 1, 1]
+Incorrectly classified breed: Dog_01.jpg, Labels: ['dog', 'malamute, malemute, alaskan malamute', 0, 1, 1]
+
+** Total Elapsed Runtime: 0:0:0
