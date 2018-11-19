@@ -43,6 +43,8 @@ def get_pet_labels(image_dir):
     results_dic = {}
     index = 0
     for file_name in listdir(image_dir):
+		if file_name.startswith('.'):
+			continue
         splitted_file_name = file_name[:file_name.rfind('_')].split('_')
         formatted_file_name = ' '.join([name.lower() for name in splitted_file_name])
         results_dic[file_name] = [formatted_file_name]
